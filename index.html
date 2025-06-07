@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Phone is Hacked</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+    /* Background */
+    body, html {
+      margin: 0; padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #0d0000 0%, #220000 80%);
+      overflow: hidden;
+      font-family: 'Orbitron', monospace, sans-serif;
+      user-select: none;
+    }
+
+    /* Futuristic flickering text */
+    .hacked-text {
+      color: #ff0000;
+      font-size: 5vw;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow:
+        0 0 5px #ff0000,
+        0 0 15px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px #ff0000,
+        0 0 90px #ff0000;
+      animation: flicker 3s infinite alternate;
+      letter-spacing: 0.15em;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity:
